@@ -1,0 +1,33 @@
+{
+  "tokenInfo": {
+      "name": "SMRK",
+      "symbol": "$SMRK",
+      "decimals": 9,
+      "totalSupply": "1000000000000",
+      "blockchain": "Solana",
+      "contractAddress": "coming_soon"
+  },
+  "statistics": {
+      "holders": "50K+",
+      "marketCap": "2.5M",
+      "communityMembers": "15K+",
+      "volume24h": "500K",
+      "liquidityLocked": "1.2M"
+  },
+  "distribution": {
+      "liquidityPool": {
+          "percentage": 40,
+          "description": "Locked for 1 year to ensure trading stability"
+      },
+      "community": {
+          "percentage": 50,
+          "description": "Reserved for community rewards and growth"
+      },
+      "marketingAndDev": {
+          "percentage": 10,
+          "description": "Marketing initiatives and development"
+      }
+  },
+  "social": {
+      "discord": "https://discord.gg/smrk",
+      "twitter": "https://twitter.com/
