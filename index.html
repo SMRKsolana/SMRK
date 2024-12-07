@@ -9,88 +9,123 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
   </head>
   <body>
-    <div class="plaid-bg"></div>
+    <div class="gradient-bg"></div>
 
-    <nav class="navbar">
-      <div class="nav-content">
-        <div class="logo">$SMRK</div>
-        <div class="nav-links">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-brand">
+          <img
+            src="https://github.com/SMRKsolana/Logo/blob/main/Screenshot_2024-12-06_at_125120_PM_processed.png?raw=true"
+            alt="SMRK Logo"
+            class="nav-logo"
+          />
+          <span class="brand-text">$SMRK</span>
+        </div>
+        <div class="nav-menu">
           <a href="#about">About</a>
           <a href="#tokenomics">Tokenomics</a>
           <a href="#features">Features</a>
           <a href="#community">Community</a>
+          <a
+            href="https://pump.fun/board"
+            target="_blank"
+            class="connect-wallet"
+            >Connect Wallet</a
+          >
         </div>
+        <div class="mobile-toggle"><span></span><span></span><span></span></div>
       </div>
     </nav>
 
     <section class="hero" id="about">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>The Comfiest<br />Token on Solana</h1>
-          <p>
-            Join the comfiest community in crypto! We're just a bunch of
-            friendly folks who believe DeFi should feel like home.
-          </p>
-          <div class="cta-container">
-            <button class="cta-button primary">Buy $SMRK</button>
-            <button class="cta-button secondary">
-              <i class="fab fa-discord"></i>
-              Join Discord
-            </button>
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="chain-pill">Solana Network</div>
+            <h1>The Comfiest<br />Token on Solana</h1>
+            <p>
+              Join the comfiest community in crypto! We're just a bunch of
+              friendly folks who believe DeFi should feel like home.
+            </p>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-value">50K+</span>
+                <span class="stat-label">HOLDERS</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">$2.5M</span>
+                <span class="stat-label">MARKET CAP</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">15K+</span>
+                <span class="stat-label">COMMUNITY</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a
+                href="https://pump.fun/board"
+                target="_blank"
+                class="btn-primary"
+                >Buy $SMRK</a
+              >
+              <button class="btn-secondary">
+                <i class="fab fa-discord"></i>
+                Join Discord
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="character-container">
-          <img
-            src="https://media.discordapp.net/attachments/774296375840079873/1314700478721818624/Screenshot_2024-12-06_at_125120_PM_processed.png?ex=6754b9bc&is=6753683c&hm=3cbd01ce85812c0bcdd9ae584f546fc41d5a396266d4755a8faf81821f1cf768&=&format=webp&quality=lossless&width=532&height=1038"
-            alt="SMRK Character"
-            class="smrk-character"
-          />
+          <div class="hero-image">
+            <img
+              src="https://github.com/SMRKsolana/Logo/blob/main/Screenshot_2024-12-06_at_125120_PM_processed.png?raw=true"
+              alt="SMRK Character"
+              class="floating"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <section class="tokenomics" id="tokenomics">
-      <div class="section-content">
+      <div class="section-wrapper">
         <h2>Tokenomics</h2>
-        <div class="cards-grid">
-          <div class="token-card supply-card">
+        <div class="tokenomics-grid">
+          <div class="token-card supply">
             <h3>Total Supply</h3>
-            <div class="token-amount">69,420,000</div>
+            <div class="supply-amount">69,420,000</div>
             <p>$SMRK Tokens</p>
           </div>
-          <div class="token-card distribution-card">
+          <div class="token-card distribution">
             <h3>Distribution</h3>
-            <div class="distribution-list">
-              <div class="distribution-item">
-                <div class="bar-label">
-                  <span>Liquidity Pool</span>
-                  <span class="percentage">94.9%</span>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress liquidity" style="width: 94.9%"></div>
-                </div>
-                <div class="description">Permanently Locked</div>
+            <div class="distribution-item">
+              <div class="item-header">
+                <span>Liquidity Pool</span>
+                <span>94.9%</span>
               </div>
-              <div class="distribution-item">
-                <div class="bar-label">
-                  <span>Marketing & Dev</span>
-                  <span class="percentage">5.1%</span>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress marketing" style="width: 5.1%"></div>
-                </div>
+              <div class="progress-bar">
+                <div class="progress liquidity" style="width: 94.9%"></div>
+              </div>
+              <p class="item-note">Permanently Locked</p>
+            </div>
+            <div class="distribution-item">
+              <div class="item-header">
+                <span>Marketing & Dev</span>
+                <span>5.1%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress marketing" style="width: 5.1%"></div>
               </div>
             </div>
             <div class="tax-info">
               <div class="tax-item">
-                <span>Buy Tax:</span>
-                <span class="tax-value">0%</span>
+                <span>Buy Tax</span>
+                <span class="value">0%</span>
               </div>
               <div class="tax-item">
-                <span>Sell Tax:</span>
-                <span class="tax-value">0%</span>
+                <span>Sell Tax</span>
+                <span class="value">0%</span>
               </div>
             </div>
           </div>
@@ -99,16 +134,16 @@
     </section>
 
     <section class="features" id="features">
-      <div class="section-content">
+      <div class="section-wrapper">
         <h2>Why Choose $SMRK?</h2>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="fas fa-lock"></i>
+              <i class="fas fa-shield-alt"></i>
             </div>
             <h3>Secure Launch</h3>
             <p>Fair launch through pump.fun with built-in bot protection.</p>
-            <ul class="feature-list">
+            <ul>
               <li>94.9% Locked LP</li>
               <li>Max Wallet: 2%</li>
               <li>Max TX: 1%</li>
@@ -120,7 +155,7 @@
             </div>
             <h3>Community First</h3>
             <p>Built for long-term community growth.</p>
-            <ul class="feature-list">
+            <ul>
               <li>Zero team tokens</li>
               <li>Community rewards</li>
               <li>Regular AMAs</li>
@@ -132,7 +167,7 @@
             </div>
             <h3>Fair Launch</h3>
             <p>Launching on pump.fun for maximum fairness.</p>
-            <ul class="feature-list">
+            <ul>
               <li>Anti-bot measures</li>
               <li>Zero taxes</li>
               <li>Fair distribution</li>
@@ -140,11 +175,11 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="fas fa-shield-alt"></i>
+              <i class="fas fa-lock"></i>
             </div>
             <h3>Safety First</h3>
             <p>Built with security in mind.</p>
-            <ul class="feature-list">
+            <ul>
               <li>Native token locker</li>
               <li>Verified contract</li>
               <li>Renounced ownership</li>
@@ -155,34 +190,87 @@
     </section>
 
     <section class="community" id="community">
-      <div class="section-content">
+      <div class="section-wrapper">
         <h2>Join the Comfy Squad!</h2>
-        <div class="community-info">
+        <div class="community-content">
           <div class="community-text">
             <h3>Be Part of Something Special</h3>
             <p>
               Join thousands of friendly folks who believe in building a
               welcoming DeFi community.
             </p>
-            <div class="stats-list">
-              <p>24/7 Active Support</p>
-              <p>15K+ Community Members</p>
-              <p>100+ Daily Active Users</p>
+            <div class="community-stats">
+              <div class="community-stat">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Active Support</span>
+              </div>
+              <div class="community-stat">
+                <i class="fas fa-users"></i>
+                <span>15K+ Community Members</span>
+              </div>
+              <div class="community-stat">
+                <i class="fas fa-chart-line"></i>
+                <span>100+ Daily Active Users</span>
+              </div>
             </div>
           </div>
           <div class="social-links">
-            <a href="#" class="https://discord.gg/d2X7XzjUbM">
-              <i class="fab fa-discord"></i> Join Discord 250+ members
+            <a href="https://discord.gg/d2X7XzjUbM" class="social-link discord">
+              <i class="fab fa-discord"></i>
+              <span>Join Discord</span>
+              <span class="member-count">250+ members</span>
             </a>
-            <a href="#" class="https://x.com/SMRKsolana">
-              <i class="fab fa-twitter"></i> Follow on Twitter 
-            </a>
+            <a href="https://x.com/SMRKsolana" class="social-link twitter">
+              <i class="fab fa-twitter"></i>
+              <span>Follow on Twitter</span>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script>
+      // Mobile menu toggle
+      document
+        .querySelector(".mobile-toggle")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.querySelector(".nav-menu").classList.toggle("active");
+        });
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Initialize GSAP animations
+      gsap.from(".hero-text", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: 0.5,
+      });
+
+      gsap.from(".hero-image", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1,
+        delay: 0.8,
+      });
+
+      // Floating animation for hero image
+      gsap.to(".floating", {
+        y: 20,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      });
+    </script>
   </body>
 </html>
