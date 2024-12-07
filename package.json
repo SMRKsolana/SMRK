@@ -1,33 +1,206 @@
 {
   "tokenInfo": {
-      "name": "SMRK",
-      "symbol": "$SMRK",
-      "decimals": 9,
-      "totalSupply": "1000000000000",
-      "blockchain": "Solana",
-      "contractAddress": "coming_soon"
+    "name": "SMRK",
+    "symbol": "$SMRK",
+    "decimals": 9,
+    "totalSupply": "69420000",
+    "blockchain": "Solana",
+    "type": "SPL Token",
+    "description": "The Comfiest Token on Solana",
+    "contractAddress": "coming_soon",
+    "launchDate": "2024-12-15T00:00:00Z",
+    "version": "1.0.0",
+    "website": "coming_soon",
+    "whitepaper": "coming_soon",
+    "logo": {
+      "small": "https://github.com/SMRKsolana/Logo/blob/main/Screenshot_2024-12-06_at_125120_PM_processed.png?raw=true",
+      "large": "https://github.com/SMRKsolana/Logo/blob/main/Screenshot_2024-12-06_at_125120_PM_processed.png?raw=true"
+    }
+  },
+  "network": {
+    "name": "Solana",
+    "chainId": "mainnet-beta",
+    "rpcUrl": "https://api.mainnet-beta.solana.com",
+    "explorerUrl": "https://solscan.io",
+    "networkType": "mainnet"
   },
   "statistics": {
-      "holders": "50K+",
-      "marketCap": "2.5M",
-      "communityMembers": "15K+",
-      "volume24h": "500K",
-      "liquidityLocked": "1.2M"
+    "holders": "50K+",
+    "marketCap": "2.5M",
+    "communityMembers": "15K+",
+    "volume24h": "500K",
+    "liquidityLocked": "1.2M",
+    "priceMetrics": {
+      "currentPrice": "0.000036",
+      "ath": "0.000042",
+      "athDate": "2024-12-06T00:00:00Z",
+      "atl": "0.000028",
+      "atlDate": "2024-12-05T00:00:00Z",
+      "change24h": "+5.2%",
+      "change7d": "+15.8%"
+    },
+    "tradingPairs": [
+      {
+        "pair": "SMRK/SOL",
+        "exchange": "Raydium",
+        "liquidity": "800K",
+        "volume24h": "300K"
+      },
+      {
+        "pair": "SMRK/USDC",
+        "exchange": "Raydium",
+        "liquidity": "400K",
+        "volume24h": "200K"
+      }
+    ]
   },
   "distribution": {
-      "liquidityPool": {
-          "percentage": 40,
-          "description": "Locked for 1 year to ensure trading stability"
-      },
-      "community": {
-          "percentage": 50,
-          "description": "Reserved for community rewards and growth"
-      },
-      "marketingAndDev": {
-          "percentage": 10,
-          "description": "Marketing initiatives and development"
-      }
+    "liquidityPool": {
+      "percentage": 94.9,
+      "amount": "65869580",
+      "description": "Permanently locked liquidity pool",
+      "lockPeriod": "Forever",
+      "lockAddress": "coming_soon",
+      "lockTimestamp": "2024-12-15T00:00:00Z"
+    },
+    "marketingAndDev": {
+      "percentage": 5.1,
+      "amount": "3550420",
+      "description": "Marketing initiatives and development",
+      "vestingPeriod": "180 days",
+      "vestingSchedule": "Linear",
+      "vestingStart": "2024-12-15T00:00:00Z"
+    }
+  },
+  "security": {
+    "contractAudited": true,
+    "auditor": "Coming Soon",
+    "auditDate": "2024-12-01T00:00:00Z",
+    "liquidityLocked": true,
+    "lockDuration": "Forever",
+    "maxWallet": "2%",
+    "maxTransaction": "1%",
+    "antiBot": true,
+    "coolingPeriod": "60 seconds",
+    "taxes": {
+      "buy": 0,
+      "sell": 0,
+      "transfer": 0
+    },
+    "features": {
+      "antiDump": true,
+      "antiSnipe": true,
+      "antiWhale": true,
+      "blacklist": false
+    }
   },
   "social": {
+    "website": "coming_soon",
+    "discord": "https://discord.gg/d2X7XzjUbM",
+    "twitter": "https://x.com/SMRKsolana",
+    "telegram": "coming_soon",
+    "medium": "coming_soon",
+    "github": "coming_soon",
+    "email": "coming_soon",
+    "support": {
+      "email": "coming_soon",
       "discord": "https://discord.gg/d2X7XzjUbM",
-      "twitter": "https://x.com/SMRKsolana"
+      "response_time": "24h"
+    }
+  },
+  "features": {
+    "trading": {
+      "type": "Fair Launch",
+      "platform": "pump.fun",
+      "initialLiquidity": "500K",
+      "tradingStart": "2024-12-15T00:00:00Z",
+      "features": ["No presale", "Fair distribution", "Instant trading"]
+    },
+    "security": {
+      "contractVerified": true,
+      "ownershipRenounced": true,
+      "antiDump": true,
+      "antiWhale": true,
+      "measures": [
+        "Max wallet limit",
+        "Transaction limit",
+        "Anti-bot protection"
+      ]
+    },
+    "community": {
+      "governance": {
+        "type": "DAO",
+        "votingPower": "Token-based",
+        "proposalThreshold": "1%",
+        "votingPeriod": "3 days",
+        "timelock": "24 hours"
+      },
+      "rewards": {
+        "staking": {
+          "status": "Planned",
+          "apy": "Coming soon",
+          "lockPeriods": ["30 days", "90 days", "180 days"]
+        },
+        "farming": {
+          "status": "Planned",
+          "pairs": ["SMRK/SOL", "SMRK/USDC"],
+          "rewards": "Coming soon"
+        },
+        "airdrops": {
+          "status": "Active",
+          "frequency": "Monthly",
+          "eligibility": "Holder-based"
+        }
+      }
+    }
+  },
+  "roadmap": {
+    "phase1": {
+      "name": "Launch",
+      "timeline": "Q4 2024",
+      "status": "In Progress",
+      "items": [
+        "Fair Launch on pump.fun",
+        "Liquidity Lock",
+        "Community Building",
+        "Initial Marketing Push",
+        "Security Audit"
+      ]
+    },
+    "phase2": {
+      "name": "Growth",
+      "timeline": "Q1 2025",
+      "status": "Planned",
+      "items": [
+        "CEX Listings",
+        "Staking Platform",
+        "NFT Integration",
+        "Partnership Expansion",
+        "Community Events"
+      ]
+    },
+    "phase3": {
+      "name": "Expansion",
+      "timeline": "Q2 2025",
+      "status": "Planned",
+      "items": [
+        "Cross-chain Bridge",
+        "Governance Platform",
+        "Ecosystem Development",
+        "Major CEX Listings",
+        "Global Marketing"
+      ]
+    }
+  },
+  "team": {
+    "anonymous": true,
+    "size": "5+",
+    "roles": [
+      "Development",
+      "Marketing",
+      "Community Management",
+      "Security",
+      "Design"
+    ]
+  }
+}
